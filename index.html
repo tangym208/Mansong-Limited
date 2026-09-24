@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>漫松有限公司 Mansong Limited | 企业IT数字化与AI转型顾问</title>
+<meta name="description" content="漫松有限公司（Mansong Limited）— 香港高端企业数字化转型顾问。数字化转型咨询、企业AI落地赋能、Fractional CIO 兼职高管IT顾问、IT与AI培训、高管与团队教练。服务香港·粤港澳大湾区·出海企业。">
+<meta name="keywords" content="数字化转型, AI落地, Fractional CIO, IT咨询, 香港, 大湾区, Mansong, 漫松, digital transformation, AI enablement, IT consulting Hong Kong">
+<meta property="og:title" content="漫松有限公司 Mansong Limited | 企业IT数字化与AI转型顾问">
+<meta property="og:description" content="香港高端企业数字化转型顾问 —— 懂业务、懂技术、懂管理。从诊断到落地，全链路闭环解决方案。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mansong.hk">
+<meta property="og:image" content="https://mansong.hk/assets/logo.jpg">
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0e2a52;
+  --blue:#1d5dd8;
+  --blue-2:#3b82f6;
+  --cyan:#22b8e6;
+  --ink:#182234;
+  --gray:#5b6b82;
+  --bg:#f6f9fe;
+  --card:#ffffff;
+  --line:#e3ecf7;
+  --radius:16px;
+  --shadow:0 8px 30px rgba(14,42,82,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter','Noto Sans SC','Microsoft YaHei',sans-serif;
+  color:var(--ink);background:var(--bg);line-height:1.7;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+/* ---------- language toggle ---------- */
+body.en .zh{display:none !important}
+body:not(.en) .en{display:none !important}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+.brand img{width:44px;height:44px;border-radius:10px;object-fit:cover}
+.brand .name{font-size:18px;line-height:1.2}
+.brand .name small{display:block;font-size:11px;font-weight:500;color:var(--gray);letter-spacing:.5px}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--ink);transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-right{display:flex;gap:14px;align-items:center}
+.lang-btn{
+  border:1.5px solid var(--line);background:#fff;border-radius:999px;
+  padding:6px 16px;font-size:13px;font-weight:600;color:var(--navy);cursor:pointer;
+  transition:all .2s;font-family:inherit;
+}
+.lang-btn:hover{border-color:var(--blue);color:var(--blue)}
+.btn{
+  display:inline-block;border-radius:999px;padding:11px 26px;
+  font-size:15px;font-weight:600;transition:all .2s;cursor:pointer;border:none;font-family:inherit;
+}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;box-shadow:0 6px 18px rgba(29,93,216,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(29,93,216,.45)}
+.btn-ghost{border:1.5px solid var(--navy);color:var(--navy);background:transparent}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+.btn-sm{padding:9px 20px;font-size:14px}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:6px}
+.burger span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;border-radius:2px;transition:.3s}
+
+/* ---------- hero ---------- */
+.hero{
+  background:linear-gradient(135deg,#0b2148 0%,#123a7a 45%,#1560b8 80%,#1e7fc2 100%);
+  color:#fff;padding:110px 0 90px;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(600px 300px at 80% 20%,rgba(56,189,248,.25),transparent 60%),
+             radial-gradient(500px 260px at 10% 85%,rgba(34,184,230,.18),transparent 60%);
+}
+.hero .container{position:relative}
+.hero .tag{
+  display:inline-block;border:1px solid rgba(255,255,255,.35);border-radius:999px;
+  padding:6px 18px;font-size:13.5px;letter-spacing:1px;margin-bottom:26px;
+  background:rgba(255,255,255,.08);
+}
+.hero h1{font-size:46px;font-weight:900;line-height:1.25;max-width:820px;margin-bottom:10px}
+.hero h1 .en-line{display:block;font-size:24px;font-weight:600;color:#bcd8ff;margin-top:14px;letter-spacing:.3px}
+.hero p.sub{font-size:18px;color:#cfe0ff;max-width:760px;margin:22px 0 38px}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.hero-cta .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+.hero-cta .btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:70px;
+}
+.hstat{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+  border-radius:var(--radius);padding:24px 22px;backdrop-filter:blur(6px);
+}
+.hstat b{font-size:30px;font-weight:800;display:block;color:#fff}
+.hstat b i{font-style:normal;font-size:18px;margin-left:2px;color:#8fd6ff}
+.hstat span{font-size:13.5px;color:#bcd4f5}
+
+/* ---------- sections ---------- */
+section{padding:90px 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 56px}
+.sec-head .kicker{
+  display:inline-block;color:var(--blue);font-weight:700;font-size:13.5px;
+  letter-spacing:2.5px;text-transform:uppercase;margin-bottom:14px;
+}
+.sec-head h2{font-size:34px;font-weight:800;line-height:1.3}
+.sec-head p{color:var(--gray);margin-top:14px;font-size:16.5px}
+
+/* advantages */
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.adv-grid.center-last{justify-items:stretch}
+.adv-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:32px 28px;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s;
+}
+.adv-card:hover{transform:translateY(-5px);box-shadow:0 14px 38px rgba(14,42,82,.13)}
+.adv-card .icon{
+  width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#eaf2ff,#e0f6ff);margin-bottom:18px;font-size:25px;
+}
+.adv-card h3{font-size:19px;margin-bottom:10px}
+.adv-card p{font-size:14.5px;color:var(--gray)}
+
+/* services */
+.svc{background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+.svc-block{
+  display:grid;grid-template-columns:1fr 1.35fr;gap:44px;align-items:start;
+  padding:44px 0;border-top:1px solid var(--line);
+}
+.svc-block:first-of-type{border-top:none;padding-top:8px}
+.svc-info .num{
+  display:inline-block;font-size:13px;font-weight:800;color:var(--blue);
+  background:#eaf2ff;border-radius:8px;padding:4px 12px;margin-bottom:14px;letter-spacing:1px;
+}
+.svc-info h3{font-size:26px;font-weight:800;margin-bottom:6px}
+.svc-info .en-t{font-size:14px;color:var(--gray);font-weight:500;margin-bottom:16px}
+.svc-info p.desc{color:var(--gray);font-size:15px}
+.svc-info .deliver{
+  margin-top:18px;background:#f2f7ff;border-left:3px solid var(--blue);
+  border-radius:0 10px 10px 0;padding:14px 18px;font-size:13.5px;color:var(--navy);
+}
+.svc-items{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.svc-item{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;
+  transition:transform .2s,box-shadow .2s;
+}
+.svc-item:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.svc-item h4{font-size:16px;margin-bottom:8px;display:flex;align-items:center;gap:9px}
+.svc-item h4 .dot{
+  width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));flex:none;
+}
+.svc-item p{font-size:13.5px;color:var(--gray)}
+
+/* methodology */
+.meth{background:#0e2a52;color:#fff;position:relative;overflow:hidden}
+.meth::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 340px at 90% 10%,rgba(34,184,230,.16),transparent 60%)}
+.meth .container{position:relative}
+.meth .sec-head h2,.meth .sec-head .kicker{color:#fff}
+.meth .sec-head .kicker{color:#7fd4ff}
+.meth .sec-head p{color:#a9c4e8}
+.meth-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.meth-card{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);
+  border-radius:var(--radius);padding:28px 24px;
+}
+.meth-card .icon{font-size:26px;margin-bottom:14px}
+.meth-card h3{font-size:18px;margin-bottom:10px;color:#fff}
+.meth-card p{font-size:13.5px;color:#b7ccea}
+.steps{margin-top:52px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:38px}
+.steps h3{font-size:20px;margin-bottom:24px;text-align:center}
+.steps ol{list-style:none;display:grid;grid-template-columns:repeat(7,1fr);gap:10px;counter-reset:s}
+.steps li{counter-increment:s;text-align:center;font-size:13px;color:#d7e6fa;position:relative;padding-top:38px}
+.steps li::before{
+  content:counter(s,decimal-leading-zero);position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font-weight:700;font-size:12px;
+}
+.steps li::after{content:"";position:absolute;top:15px;left:calc(50% + 18px);width:calc(100% - 36px);height:1px;background:rgba(255,255,255,.25)}
+.steps li:last-child::after{display:none}
+.meth-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px}
+.mstat{text-align:center}
+.mstat b{font-size:38px;font-weight:800;color:#7fd4ff;display:block}
+.mstat b i{font-style:normal;font-size:20px}
+.mstat span{font-size:13.5px;color:#b7ccea}
+
+/* engagement */
+.eng-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:60px}
+.eng-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px 28px;box-shadow:var(--shadow);position:relative;overflow:hidden;
+}
+.eng-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.eng-card .num{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:1px}
+.eng-card h3{font-size:20px;margin:8px 0 12px}
+.eng-card p{font-size:14.5px;color:var(--gray)}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.flow-step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 16px;text-align:center;position:relative}
+.flow-step .fi{
+  width:44px;height:44px;margin:0 auto 12px;border-radius:50%;
+  background:linear-gradient(135deg,#eaf2ff,#e0f6ff);display:flex;align-items:center;justify-content:center;font-size:19px;
+}
+.flow-step h4{font-size:15px;margin-bottom:6px}
+.flow-step p{font-size:12px;color:var(--gray);line-height:1.55}
+
+/* clients */
+.cli-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.cli-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 24px;transition:transform .25s,box-shadow .25s;
+}
+.cli-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.cli-card .icon{font-size:30px;margin-bottom:14px}
+.cli-card h3{font-size:17px;margin-bottom:10px}
+.cli-card p{font-size:13.5px;color:var(--gray)}
+
+/* team */
+.team{background:linear-gradient(180deg,#fff,var(--bg))}
+.team-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:start}
+.team-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:38px;box-shadow:var(--shadow);
+}
+.team-card h3{font-size:21px;margin-bottom:14px}
+.team-card p{font-size:15px;color:var(--gray)}
+.team-card .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.badge{
+  background:#eaf2ff;color:var(--navy);font-size:12.5px;font-weight:600;
+  border-radius:999px;padding:6px 14px;
+}
+.field-list{display:grid;gap:12px}
+.field{
+  display:flex;gap:16px;background:var(--card);border:1px solid var(--line);
+  border-radius:14px;padding:18px 20px;align-items:flex-start;
+}
+.field .fi{
+  width:42px;height:42px;border-radius:12px;flex:none;
+  background:linear-gradient(135deg,#eaf2ff,#e0f6ff);
+  display:flex;align-items:center;justify-content:center;font-size:19px;
+}
+.field h4{font-size:15.5px}
+.field p{font-size:13px;color:var(--gray)}
+.philosophy{
+  margin-top:44px;text-align:center;background:linear-gradient(135deg,#0e2a52,#1553a8);
+  color:#fff;border-radius:var(--radius);padding:40px 36px;font-size:16.5px;line-height:1.9;
+}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:stretch}
+.contact-info{
+  background:linear-gradient(135deg,#0e2a52,#1553a8);color:#fff;border-radius:var(--radius);
+  padding:44px;display:flex;flex-direction:column;justify-content:center;gap:20px;
+}
+.contact-info .row{display:flex;gap:16px;align-items:flex-start}
+.contact-info .fi{
+  width:44px;height:44px;border-radius:12px;flex:none;background:rgba(255,255,255,.14);
+  display:flex;align-items:center;justify-content:center;font-size:19px;
+}
+.contact-info h4{font-size:14px;color:#9fc3ef;font-weight:600}
+.contact-info p{font-size:16px}
+.contact-cta{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:44px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:center;
+}
+.contact-cta h3{font-size:23px;margin-bottom:12px}
+.contact-cta p{color:var(--gray);font-size:15px;margin-bottom:22px}
+.contact-cta ul{list-style:none;margin-bottom:28px}
+.contact-cta li{padding:8px 0;font-size:15px;display:flex;gap:10px;align-items:center}
+.contact-cta li::before{content:"✓";color:var(--blue);font-weight:800}
+
+/* footer */
+footer{background:#0a1f3f;color:#8fa9cc;padding:44px 0;font-size:13.5px}
+footer .container{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer .fbrand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700}
+footer .fbrand img{width:34px;height:34px;border-radius:8px}
+footer a:hover{color:#fff}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* responsive */
+@media(max-width:1000px){
+  .hero h1{font-size:34px}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .adv-grid,.eng-grid{grid-template-columns:repeat(2,1fr)}
+  .svc-block{grid-template-columns:1fr;gap:24px}
+  .meth-grid{grid-template-columns:repeat(2,1fr)}
+  .steps ol{grid-template-columns:repeat(4,1fr);gap:22px}
+  .steps li::after{display:none}
+  .flow{grid-template-columns:repeat(3,1fr)}
+  .cli-grid{grid-template-columns:repeat(2,1fr)}
+  .team-wrap,.contact-grid{grid-template-columns:1fr}
+  .meth-stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .nav-links{
+    display:none;position:absolute;top:72px;left:0;right:0;background:#fff;
+    flex-direction:column;padding:22px;gap:18px;border-bottom:1px solid var(--line);
+    box-shadow:0 20px 30px rgba(14,42,82,.1);
+  }
+  .nav-links.open{display:flex}
+  .burger{display:block}
+  .nav-cta{display:none}
+  section{padding:64px 0}
+  .hero{padding:76px 0 60px}
+  .hero h1{font-size:28px}
+  .hero-stats{grid-template-columns:1fr 1fr;gap:12px}
+  .adv-grid,.eng-grid,.meth-grid,.cli-grid{grid-template-columns:1fr}
+  .flow{grid-template-columns:repeat(2,1fr)}
+  .svc-items{grid-template-columns:1fr}
+  .steps ol{grid-template-columns:repeat(2,1fr)}
+  .contact-info,.contact-cta,.team-card{padding:28px}
+  .sec-head h2{font-size:26px}
+}
+</style>
+</head>
+<body class="lang-zh">
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top">
+      <img src="assets/logo.jpg" alt="Mansong Limited 漫松有限公司">
+      <div class="name">
+        <span class="zh">漫松有限公司</span><span class="en">Mansong Limited</span>
+        <small><span class="zh">数字化转型与AI顾问</span><span class="en">Digital &amp; AI Transformation</span></small>
+      </div>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#advantages"><span class="zh">核心优势</span><span class="en">Why Us</span></a>
+      <a href="#services"><span class="zh">服务体系</span><span class="en">Services</span></a>
+      <a href="#methodology"><span class="zh">方法论</span><span class="en">Methodology</span></a>
+      <a href="#engagement"><span class="zh">合作模式</span><span class="en">Engagement</span></a>
+      <a href="#team"><span class="zh">团队</span><span class="en">Team</span></a>
+      <a href="#contact"><span class="zh">联系我们</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta"><span class="zh">免费初步诊断</span><span class="en">Free Assessment</span></a>
+      <button class="burger" id="burger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="container">
+    <span class="tag reveal"><span class="zh">香港 · 粤港澳大湾区 · 出海企业</span><span class="en">Hong Kong · GBA · Global Expansion</span></span>
+    <h1 class="reveal">
+      <span class="zh">企业数字化转型的陪跑者与战略架构师</span>
+      <span class="en">Your Partner &amp; Strategic Architect<br>for Digital Transformation</span>
+      <span class="en-line"><span class="zh">Mansong Limited · 香港高端企业数字化转型顾问</span><span class="en">Mansong Limited · Premium Digital Transformation Consulting in Hong Kong</span></span>
+    </h1>
+    <p class="sub reveal">
+      <span class="zh">从诊断到规划，从落地到优化——我们提供全链路闭环解决方案，以"懂业务、懂技术、懂管理"的核心能力，助力企业在数字时代持续领先。</span>
+      <span class="en">From diagnosis to planning, from implementation to optimization — we deliver end-to-end solutions with deep expertise in business, technology and management, keeping you ahead in the digital era.</span>
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#contact" class="btn btn-primary"><span class="zh">预约免费初步诊断</span><span class="en">Book a Free Assessment</span></a>
+      <a href="#services" class="btn btn-ghost"><span class="zh">了解核心服务</span><span class="en">Explore Services</span></a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat reveal"><b>30<i>+</i></b><span><span class="zh">年跨国集团 IT/DT 全域管理经验</span><span class="en">Years of global IT/DT leadership</span></span></div>
+      <div class="hstat reveal"><b>500<i>强</i></b><span><span class="zh">CIO 高管视角 · 顶级治理能力</span><span class="en">Fortune 500 CIO-level governance</span></span></div>
+      <div class="hstat reveal"><b>4<i>+1</i></b><span><span class="zh">核心服务体系 · 一站式覆盖</span><span class="en">Core service lines, one stop</span></span></div>
+      <div class="hstat reveal"><b>6<i>步</i></b><span><span class="zh">标准化交付流程 · 全程透明</span><span class="en">Standardized delivery process</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADVANTAGES ================= -->
+<section id="advantages">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker"><span class="zh">为什么选择我们</span><span class="en">Why Mansong</span></span>
+      <h2><span class="zh">以高管视角，让数字化转型真正落地</span><span class="en">Executive Vision, Real Transformation</span></h2>
+      <p><span class="zh">我们不做纯理论式咨询——每一个方案都具备可执行路径，每一分投入都可追溯、可量化。</span><span class="en">No ivory-tower consulting — every plan is executable, every investment traceable and measurable.</span></p>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-card reveal">
+        <div class="icon">🧭</div>
+        <h3><span class="zh">高管视角 · 顶层设计</span><span class="en">Executive Vision</span></h3>
+        <p><span class="zh">汇聚拥有 30 年跨国集团 IT/DT 全域管理经验的专家团队，从战略高度理解业务痛点，让数字化转型贴合企业长期发展目标。</span><span class="en">A team with 30 years of global IT/DT leadership, understanding business pain points from a strategic height aligned with your long-term goals.</span></p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="icon">🎯</div>
+        <h3><span class="zh">落地导向 · 拒绝空谈</span><span class="en">Execution First</span></h3>
+        <p><span class="zh">摒弃纯理论式咨询，所有方案均具备可执行路径，通过阶段性复盘与效果量化，确保转型成果真实可见、价值可追溯。</span><span class="en">Every plan comes with an executable path; milestone reviews and quantified outcomes ensure visible, traceable results.</span></p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="icon">🛡️</div>
+        <h3><span class="zh">合规护航 · 安全稳健</span><span class="en">Compliance &amp; Security</span></h3>
+        <p><span class="zh">深度适配香港《个人资料(私隐)条例》及跨境数据合规要求，构建多层级安全防护体系，规避运营风险与合规隐患。</span><span class="en">Fully aligned with Hong Kong PDPO and cross-border data compliance, with multi-layered security to mitigate operational risks.</span></p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="icon">🤖</div>
+        <h3><span class="zh">AI 原生赋能 · 智能增效</span><span class="en">AI-Native Enablement</span></h3>
+        <p><span class="zh">将生成式 AI 技术深度融入数字化方案，实现流程自动化、决策智能化与业务模式创新，为企业注入持续增长动力。</span><span class="en">Generative AI embedded in every solution — process automation, intelligent decision-making and business model innovation.</span></p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="icon">🧩</div>
+        <h3><span class="zh">灵活定制 · 适配多元</span><span class="en">Flexible &amp; Tailored</span></h3>
+        <p><span class="zh">提供项目制、月度顾问、年度陪跑等多元合作模式，按需匹配企业发展阶段与预算需求，以轻量化投入实现数字化转型。</span><span class="en">Project-based, monthly advisory or annual partnership — matched to your stage and budget, with lightweight investment.</span></p>
+      </div>
+      <div class="adv-card reveal">
+        <div class="icon">🌏</div>
+        <h3><span class="zh">本地深耕 · 跨境协同</span><span class="en">Local Depth, Cross-Border Reach</span></h3>
+        <p><span class="zh">深谙香港商业环境与大湾区市场，衔接内地与香港管理体系，服务覆盖香港、大湾区、内地及出海企业。</span><span class="en">Deep roots in Hong Kong and the GBA, bridging mainland and HK operations for local and expanding enterprises.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="svc" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker"><span class="zh">核心服务体系</span><span class="en">Core Services</span></span>
+      <h2><span class="zh">一站式企业数字化转型与 AI 服务</span><span class="en">One-Stop Digital &amp; AI Services</span></h2>
+      <p><span class="zh">覆盖战略咨询、AI 落地、IT 治理、培训赋能与高管教练的全链路服务体系。</span><span class="en">A full-stack service system covering strategy, AI enablement, IT governance, training and executive coaching.</span></p>
+    </div>
+
+    <!-- 01 数字化转型咨询 -->
+    <div class="svc-block reveal">
+      <div class="svc-info">
+        <span class="num">01</span>
+        <h3><span class="zh">企业数字化转型咨询</span><span class="en">Digital Transformation Consulting</span></h3>
+        <div class="en-t">Digital Transformation Advisory</div>
+        <p class="desc"><span class="zh">提供全方位数字化诊断，定制转型蓝图规划，重塑业务流程，助力组织能力与文化的全面升级。</span><span class="en">Comprehensive digital diagnostics, tailored transformation blueprints and process reinvention for organization-wide upgrade.</span></p>
+        <div class="deliver"><b><span class="zh">交付成果：</span><span class="en">Deliverables:</span></b> <span class="zh">《企业数字化现状诊断报告》《转型路线图 &amp; 实施白皮书》《流程优化方案与自动化手册》</span><span class="en">Diagnostic Report · Transformation Roadmap &amp; Whitepaper · Process Optimization &amp; Automation Handbook</span></div>
+      </div>
+      <div class="svc-items">
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">现状全面诊断</span><span class="en">Full Status Diagnosis</span></h4>
+          <p><span class="zh">对企业系统、业务流程、数据资产及权限体系进行全景盘点；深度剖析业务痛点与效率瓶颈，完成信息安全风险评估。</span><span class="en">Panoramic review of systems, processes, data assets and access; in-depth pain-point analysis and security risk assessment.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">战略蓝图规划</span><span class="en">Strategic Blueprint</span></h4>
+          <p><span class="zh">设计适配业务发展的 IT 架构蓝图，规划数字化升级路径；制定系统取舍整合方案，输出年度落地计划与预算测算。</span><span class="en">Business-fit IT architecture blueprint, upgrade roadmap, system consolidation plan, annual implementation plan and budget.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">业务流程重塑</span><span class="en">Process Reinvention</span></h4>
+          <p><span class="zh">重构销售、行政、财务等核心业务流程，搭建线上化协同体系，实现跨部门流程自动化流转与数据实时同步。</span><span class="en">Rebuild sales, admin and finance processes with online collaboration, cross-department automation and real-time data sync.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">核心价值</span><span class="en">Core Value</span></h4>
+          <p><span class="zh">摸清家底与隐性浪费，告别盲目投入与零散建设，实现有顶层设计、有节奏、可落地的数字化布局。</span><span class="en">Know your baseline, stop fragmented spending, and build a well-paced, top-down designed digital landscape.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 AI落地赋能 -->
+    <div class="svc-block reveal">
+      <div class="svc-info">
+        <span class="num">02</span>
+        <h3><span class="zh">企业 AI 落地赋能</span><span class="en">Enterprise AI Enablement</span></h3>
+        <div class="en-t">Enterprise AI Enablement</div>
+        <p class="desc"><span class="zh">深度梳理业务 AI 应用场景，搭建智能化工作流，开展全员 AI 技能培训，沉淀数字内容资产——构建从"场景挖掘"到"工具落地"再到"人才赋能"的全链路 AI 服务体系。</span><span class="en">From scenario discovery to tool deployment to talent enablement — a full-chain AI service that turns technology into business value.</span></p>
+        <div class="deliver"><b><span class="zh">核心价值：</span><span class="en">Core Value:</span></b> <span class="zh">让 AI 从概念口号变为真实生产力工具，直接赋能业务增长与降本增效</span><span class="en">Turn AI from buzzword into real productivity — direct impact on growth and cost efficiency</span></div>
+      </div>
+      <div class="svc-items">
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">场景定制梳理</span><span class="en">Scenario Tailoring</span></h4>
+          <p><span class="zh">深入市场、销售、财务等核心岗位，挖掘业务痛点，定制专属的可落地 AI 应用场景，拒绝"空中楼阁"方案。</span><span class="en">Work inside marketing, sales and finance to surface practical, role-specific AI scenarios — no castles in the air.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">专属工作流搭建</span><span class="en">Workflow Building</span></h4>
+          <p><span class="zh">搭建企业级 AI 自动化工作流，固化跨部门协作标准，替代高频重复工作，打通业务数据与智能模型的无缝衔接。</span><span class="en">Enterprise-grade AI automation workflows that replace repetitive work and connect business data with AI models.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">全员赋能工作坊</span><span class="en">All-Staff Enablement</span></h4>
+          <p><span class="zh">分层培训体系：高管聚焦战略认知与决策应用，全员侧重效率工具实操，全方位提升组织的 AI 应用能力。</span><span class="en">Tiered training: executives focus on strategy and decisions; all staff master hands-on AI productivity tools.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">数字资产沉淀</span><span class="en">Digital Asset Building</span></h4>
+          <p><span class="zh">帮助企业沉淀 AI 数字内容资产与知识库，让智能成果可持续复用，成为组织长期竞争力的一部分。</span><span class="en">Build reusable AI content assets and knowledge bases that become lasting organizational competitiveness.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 Fractional CIO -->
+    <div class="svc-block reveal">
+      <div class="svc-info">
+        <span class="num">03</span>
+        <h3><span class="zh">Fractional CIO 兼职高管 IT 顾问</span><span class="en">Fractional CIO Advisory</span></h3>
+        <div class="en-t">Fractional Chief Information Officer</div>
+        <p class="desc"><span class="zh">我们的旗舰服务——让中小企业拥有 500 强级别的 IT 治理能力。通过月度顾问形式，提供战略咨询、制度建设、项目监理与长期陪跑，确保 IT 投入精准、高效、安全。</span><span class="en">Our flagship service — Fortune 500-grade IT governance for SMEs. Monthly advisory covering strategy, governance, project supervision and long-term partnership.</span></p>
+        <div class="deliver"><b><span class="zh">核心价值：</span><span class="en">Core Value:</span></b> <span class="zh">以全职 CIO 零头的成本，获得 500 强 CIO 级别的战略指导与治理能力</span><span class="en">Fortune 500 CIO-level guidance at a fraction of a full-time hire's cost</span></div>
+      </div>
+      <div class="svc-items">
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">月度 IT 战略顾问</span><span class="en">Monthly IT Strategy</span></h4>
+          <p><span class="zh">高管级月度复盘、预算审核与项目督导，协助优化供应商管理，为 IT 发展提供前瞻性战略指引。</span><span class="en">Executive-level monthly reviews, budget control and project supervision with forward-looking strategic guidance.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">IT 治理制度搭建</span><span class="en">IT Governance Setup</span></h4>
+          <p><span class="zh">建立标准化的 IT 管理流程、权限管控体系与数据安全规范，为数字化运营筑牢合规、安全与高效的基石。</span><span class="en">Standardized IT processes, access control and data security policies — the foundation of compliant operations.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">IT 项目监理服务</span><span class="en">IT Project Supervision</span></h4>
+          <p><span class="zh">以甲方视角全程监理外包项目，严格审核方案、进度与交付质量，杜绝偷工减料，保障项目高标准交付。</span><span class="en">Client-side supervision of outsourced projects — rigorous review of plans, progress and quality to the standard.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">数字化转型陪跑</span><span class="en">Transformation Partnership</span></h4>
+          <p><span class="zh">长期月度陪伴式辅导，从顶层设计到落地执行全程跟进，及时解决转型过程中的实际难题，确保方案落地见效。</span><span class="en">Long-term monthly coaching from top-level design to execution, resolving real problems along the way.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 IT和AI培训 -->
+    <div class="svc-block reveal">
+      <div class="svc-info">
+        <span class="num">04</span>
+        <h3><span class="zh">IT 与 AI 培训 · 信息化建设运维</span><span class="en">IT &amp; AI Training · IT Operations</span></h3>
+        <div class="en-t">IT &amp; AI Training and Managed IT Services</div>
+        <p class="desc"><span class="zh">扎实的基础信息化建设与运维服务，让企业专注于核心业务，无需为 IT 琐事烦恼。同时提供企业级 AI 与数字化技能培训。</span><span class="en">Solid IT foundation and managed operations, plus enterprise-grade AI and digital skills training — focus on your core business while we handle the rest.</span></p>
+        <div class="deliver"><b><span class="zh">核心价值：</span><span class="en">Core Value:</span></b> <span class="zh">企业线上资产安全稳定，团队数字化技能持续升级</span><span class="en">Secure and stable online assets; continuously upskilled teams</span></div>
+      </div>
+      <div class="svc-items">
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">企业邮箱部署管理</span><span class="en">Enterprise Email</span></h4>
+          <p><span class="zh">专业部署 Zoho Mail 与 Microsoft 365，配置多重安全策略与权限管控，提供账号全生命周期管理。</span><span class="en">Zoho Mail &amp; Microsoft 365 deployment with multi-layer security, access control and full account lifecycle management.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">域名与网站安全</span><span class="en">Domain &amp; Web Security</span></h4>
+          <p><span class="zh">域名注册管理、Cloudflare 智能解析与防护，部署 SSL 证书实现全站加密，定期开展安全巡检。</span><span class="en">Domain management, Cloudflare DNS &amp; protection, full-site SSL encryption and regular security audits.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">云盘与知识库搭建</span><span class="en">Cloud Drive &amp; Wiki</span></h4>
+          <p><span class="zh">搭建企业云盘与知识库系统，实现文档标准化归档、实时共享与权限分级，构建高效协同的数字化办公环境。</span><span class="en">Enterprise cloud drives and knowledge bases with standardized archiving, real-time sharing and tiered access.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">日常 IT 运维支持</span><span class="en">Daily IT Support</span></h4>
+          <p><span class="zh">电脑设备、网络链路、操作系统及办公软件故障快速排查与优化，解决账号权限、系统异常等问题，保障业务连续性。</span><span class="en">Rapid troubleshooting for devices, networks, OS and office software — keeping your business running.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 高管教练 -->
+    <div class="svc-block reveal">
+      <div class="svc-info">
+        <span class="num">05</span>
+        <h3><span class="zh">高管 1:1 与团队教练</span><span class="en">Executive &amp; Team Coaching</span></h3>
+        <div class="en-t">Executive 1:1 and Team Coaching</div>
+        <p class="desc"><span class="zh">转型的核心是人。通过一对一教练辅导与互动式工作坊，帮助管理层突破认知局限、建立数字化思维，让学习成果直接转化为业务价值。</span><span class="en">People are at the heart of transformation. 1:1 coaching and interactive workshops help leadership break cognitive limits and build digital thinking.</span></p>
+        <div class="deliver"><b><span class="zh">核心价值：</span><span class="en">Core Value:</span></b> <span class="zh">统一转型愿景，突破思维定式，建立推动组织变革的领导力</span><span class="en">Shared vision, breakthrough thinking and leadership that drives organizational change</span></div>
+      </div>
+      <div class="svc-items">
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">领导者数字化教练</span><span class="en">Leader Digital Coaching</span></h4>
+          <p><span class="zh">3-6 个月教练周期，通过结构化对话、案例研讨与反思练习，帮助高管团队统一转型愿景，建立变革领导力。</span><span class="en">A 3–6 month coaching journey with structured dialogue, case studies and reflection to align and empower your executives.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">互动实战工作坊</span><span class="en">Hands-on Workshops</span></h4>
+          <p><span class="zh">针对业务瓶颈设计 2-3 天沉浸式工作坊，通过痛点拆解、场景映射与方案共创，产出可立即落地的行动方案。</span><span class="en">2–3 day immersive workshops on your specific bottlenecks, producing immediately actionable plans.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">团队教练</span><span class="en">Team Coaching</span></h4>
+          <p><span class="zh">PCC 认证教练带领的团队教练，优化协作模式与人才结构，打造适配数字化转型的敏捷组织文化。</span><span class="en">PCC-certified team coaching that optimizes collaboration and builds an agile culture ready for transformation.</span></p>
+        </div>
+        <div class="svc-item">
+          <h4><span class="dot"></span><span class="zh">主题覆盖</span><span class="en">Topics Covered</span></h4>
+          <p><span class="zh">涵盖流程优化、数据驱动决策、敏捷转型、AI 认知升级等主题，按企业实际需求定制内容。</span><span class="en">Process optimization, data-driven decisions, agile transformation, AI literacy and more — tailored to your needs.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= METHODOLOGY ================= -->
+<section class="meth" id="methodology">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker"><span class="zh">方法论体系</span><span class="en">Methodology</span></span>
+      <h2><span class="zh">严谨的方法论，可验证的成果</span><span class="en">Rigorous Methods, Proven Results</span></h2>
+      <p><span class="zh">融合国际主流框架与本土实践经验，为企业提供既有理论深度又具实操性的转型路径。</span><span class="en">International frameworks combined with local practice — deep in theory, practical in execution.</span></p>
+    </div>
+    <div class="meth-grid">
+      <div class="meth-card reveal">
+        <div class="icon">🏗️</div>
+        <h3><span class="zh">4A 架构框架</span><span class="en">4A Architecture</span></h3>
+        <p><span class="zh">业务架构、应用架构、数据架构、技术架构四层联动设计，确保规划既有战略高度，又具备落地可行性。</span><span class="en">Business, Application, Data and Technology architecture designed in coordination — strategic yet executable.</span></p>
+      </div>
+      <div class="meth-card reveal">
+        <div class="icon">📊</div>
+        <h3><span class="zh">成熟度评估体系</span><span class="en">Maturity Assessment</span></h3>
+        <p><span class="zh">从组织协同、数据治理、技术应用、流程效率四大维度全面诊断，量化企业数字化现状与目标差距。</span><span class="en">Four-dimension assessment across organization, data, technology and process — quantifying the gap to your target.</span></p>
+      </div>
+      <div class="meth-card reveal">
+        <div class="icon">🔄</div>
+        <h3><span class="zh">BPM 流程闭环</span><span class="en">BPM Closed Loop</span></h3>
+        <p><span class="zh">流程发现 → 流程分析 → 流程重设计 → 流程治理四步闭环，精益思维与 BPM 方法论结合，确保优化成果持续固化。</span><span class="en">Discover → Analyze → Redesign → Govern — lean thinking plus BPM for continuous, sustainable improvement.</span></p>
+      </div>
+      <div class="meth-card reveal">
+        <div class="icon">⚡</div>
+        <h3><span class="zh">敏捷与 DevOps</span><span class="en">Agile &amp; DevOps</span></h3>
+        <p><span class="zh">Scrum 与 Kanban 敏捷框架结合 DevOps 持续交付能力，打通规划到上线全链路，大幅缩短交付周期。</span><span class="en">Scrum/Kanban with DevOps continuous delivery — from planning to launch, dramatically shorter cycles.</span></p>
+      </div>
+    </div>
+    <div class="steps reveal">
+      <h3><span class="zh">三阶段七步骤转型框架（50+ 项目验证）</span><span class="en">Three-Phase, Seven-Step Framework (validated in 50+ projects)</span></h3>
+      <ol>
+        <li><span class="zh">现状诊断与差距分析</span><span class="en">Diagnosis &amp; Gap Analysis</span></li>
+        <li><span class="zh">战略愿景与目标定义</span><span class="en">Vision &amp; Goal Setting</span></li>
+        <li><span class="zh">能力评估与优先级排序</span><span class="en">Capability &amp; Prioritization</span></li>
+        <li><span class="zh">架构设计与路线图规划</span><span class="en">Architecture &amp; Roadmap</span></li>
+        <li><span class="zh">试点验证与快速迭代</span><span class="en">Pilot &amp; Fast Iteration</span></li>
+        <li><span class="zh">规模推广与变革管理</span><span class="en">Scale-up &amp; Change Mgmt</span></li>
+        <li><span class="zh">持续优化与价值评估</span><span class="en">Optimize &amp; Evaluate</span></li>
+      </ol>
+    </div>
+    <div class="meth-stats">
+      <div class="mstat reveal"><b>85<i>%</i></b><span><span class="zh">项目准时交付率，高于行业均值 30%</span><span class="en">On-time delivery, 30% above industry</span></span></div>
+      <div class="mstat reveal"><b>92<i>%</i></b><span><span class="zh">客户满意度</span><span class="en">Client satisfaction</span></span></div>
+      <div class="mstat reveal"><b>40<i>%</i></b><span><span class="zh">交付周期平均缩短（引入敏捷后）</span><span class="en">Delivery cycle reduction with Agile</span></span></div>
+      <div class="mstat reveal"><b>50<i>+</i></b><span><span class="zh">成功交付项目，覆盖多行业</span><span class="en">Projects delivered across industries</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENGAGEMENT ================= -->
+<section id="engagement">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker"><span class="zh">合作模式</span><span class="en">Engagement Models</span></span>
+      <h2><span class="zh">多元化合作，适配企业不同发展阶段</span><span class="en">Flexible Models for Every Stage</span></h2>
+    </div>
+    <div class="eng-grid">
+      <div class="eng-card reveal">
+        <span class="num">01</span>
+        <h3><span class="zh">项目制</span><span class="en">Project-Based</span></h3>
+        <p><span class="zh">针对特定需求提供一次性诊断、方案设计、系统搭建与落地交付服务，周期短、目标明确，快速解决阶段性数字化痛点。</span><span class="en">One-off diagnosis, solution design, system build and delivery — short cycle, clear goals, fast results.</span></p>
+      </div>
+      <div class="eng-card reveal">
+        <span class="num">02</span>
+        <h3><span class="zh">月度顾问制（Fractional CIO）</span><span class="en">Monthly Advisory (Fractional CIO)</span></h3>
+        <p><span class="zh">长期驻场顾问服务，定期开展月度复盘与战略研讨，协助优化 IT 管理体系，输出前瞻性数字化规划与决策支持。</span><span class="en">Ongoing on-site advisory with monthly reviews and strategy sessions — forward-looking planning and decision support.</span></p>
+      </div>
+      <div class="eng-card reveal">
+        <span class="num">03</span>
+        <h3><span class="zh">按需制 / 年度陪跑</span><span class="en">On-Demand / Annual Partnership</span></h3>
+        <p><span class="zh">按需响应的灵活服务与全包式年度托管，从顶层设计到落地执行全程陪伴，适配初创团队轻量化、高性价比的需求。</span><span class="en">Flexible on-demand services or full annual retainer — from design to execution, ideal for startups wanting lightweight value.</span></p>
+      </div>
+    </div>
+    <div class="sec-head reveal" style="margin-bottom:40px">
+      <span class="kicker"><span class="zh">服务流程</span><span class="en">Delivery Process</span></span>
+      <h2 style="font-size:26px"><span class="zh">标准化全流程服务体系，保障项目高效落地</span><span class="en">Standardized end-to-end delivery</span></h2>
+    </div>
+    <div class="flow">
+      <div class="flow-step reveal"><div class="fi">💬</div><h4><span class="zh">需求沟通</span><span class="en">Discovery</span></h4><p><span class="zh">深度调研业务场景，明确项目目标与范围</span><span class="en">Research your scenarios, define goals &amp; scope</span></p></div>
+      <div class="flow-step reveal"><div class="fi">🔍</div><h4><span class="zh">诊断评估</span><span class="en">Assessment</span></h4><p><span class="zh">多维度扫描架构，输出诊断报告</span><span class="en">Multi-dimension scan, diagnostic report</span></p></div>
+      <div class="flow-step reveal"><div class="fi">📐</div><h4><span class="zh">方案规划</span><span class="en">Planning</span></h4><p><span class="zh">定制方案、路线图与预算规划</span><span class="en">Tailored plan, roadmap &amp; budget</span></p></div>
+      <div class="flow-step reveal"><div class="fi">🛠️</div><h4><span class="zh">实施搭建</span><span class="en">Implementation</span></h4><p><span class="zh">系统部署、数据迁移与调试上线</span><span class="en">Deploy, migrate, test &amp; launch</span></p></div>
+      <div class="flow-step reveal"><div class="fi">✅</div><h4><span class="zh">验收交付</span><span class="en">Handover</span></h4><p><span class="zh">严格执行验收，完成知识转移</span><span class="en">Strict acceptance &amp; knowledge transfer</span></p></div>
+      <div class="flow-step reveal"><div class="fi">🚀</div><h4><span class="zh">持续优化</span><span class="en">Optimization</span></h4><p><span class="zh">长期运维支持，定期迭代升级</span><span class="en">Ongoing support &amp; iteration</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLIENTS ================= -->
+<section class="svc" id="clients">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker"><span class="zh">服务客户</span><span class="en">Who We Serve</span></span>
+      <h2><span class="zh">深耕香港与大湾区，服务全球拓展企业</span><span class="en">Rooted in HK &amp; GBA, Serving Global Ventures</span></h2>
+    </div>
+    <div class="cli-grid">
+      <div class="cli-card reveal">
+        <div class="icon">🏦</div>
+        <h3><span class="zh">家族 / 贸易企业</span><span class="en">Family &amp; Trading Firms</span></h3>
+        <p><span class="zh">助力传统企业数字化转型，优化管理流程，提升市场响应速度与竞争力。</span><span class="en">Digitalize traditional operations, streamline management and sharpen competitiveness.</span></p>
+      </div>
+      <div class="cli-card reveal">
+        <div class="icon">🌉</div>
+        <h3><span class="zh">跨境大湾区企业</span><span class="en">Cross-Border GBA Firms</span></h3>
+        <p><span class="zh">打通跨境业务壁垒，实现两地资源协同，构建高效、合规的跨境运营体系。</span><span class="en">Bridge cross-border barriers with efficient, compliant two-region operations.</span></p>
+      </div>
+      <div class="cli-card reveal">
+        <div class="icon">🚀</div>
+        <h3><span class="zh">科技初创 / 园区 / OPC</span><span class="en">Startups / Parks / OPC</span></h3>
+        <p><span class="zh">适配初创团队灵活需求，提供轻量化、高性价比的数字化解决方案，加速技术落地。</span><span class="en">Lightweight, cost-effective digital solutions that accelerate early-stage growth.</span></p>
+      </div>
+      <div class="cli-card reveal">
+        <div class="icon">🌏</div>
+        <h3><span class="zh">内地驻港 / 出海机构</span><span class="en">Mainland in HK / Going Global</span></h3>
+        <p><span class="zh">衔接内地与香港管理体系，保障跨境业务合规高效运行，实现两地协同发展。</span><span class="en">Connect mainland and HK management systems for compliant, efficient expansion.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker"><span class="zh">关于我们</span><span class="en">About Us</span></span>
+      <h2><span class="zh">资深高管领航的专家团队</span><span class="en">Led by Seasoned Executives</span></h2>
+    </div>
+    <div class="team-wrap">
+      <div class="team-card reveal">
+        <h3><span class="zh">核心顾问团队</span><span class="en">Core Consulting Team</span></h3>
+        <p><span class="zh">汇聚拥有 30 年+ 跨国企业北亚区 IT/DT 最高管理经验的实战专家，历任国际知名科技大厂及世界 500 强企业 CIO 高管，兼具全球化战略视野与本土化落地实战能力。</span><span class="en">Veterans with 30+ years of top-tier IT/DT leadership in multinational North Asia operations, having served as CIOs at renowned global tech firms and Fortune 500 companies — combining global vision with local execution.</span></p>
+        <div class="badges">
+          <span class="badge">PCC Coach</span>
+          <span class="badge"><span class="zh">团队教练</span><span class="en">Team Coach</span></span>
+          <span class="badge"><span class="zh">数字化 &amp; AI 转型教练</span><span class="en">Digital &amp; AI Transformation Coach</span></span>
+          <span class="badge">TOGAF</span>
+          <span class="badge">SAFe / Scrum</span>
+        </div>
+      </div>
+      <div class="field-list">
+        <div class="field reveal"><div class="fi">🏢</div><div><h4><span class="zh">信息化建设</span><span class="en">IT Infrastructure</span></h4><p><span class="zh">构建稳固高效的企业数字底座，打通业务流程与数据脉络。</span><span class="en">A solid digital foundation connecting processes and data.</span></p></div></div>
+        <div class="field reveal"><div class="fi">🧭</div><div><h4><span class="zh">数字化战略</span><span class="en">Digital Strategy</span></h4><p><span class="zh">定制转型路线图，重塑业务模式，以数据驱动决策。</span><span class="en">Custom roadmaps and data-driven business model reinvention.</span></p></div></div>
+        <div class="field reveal"><div class="fi">🛡️</div><div><h4><span class="zh">IT 风险治理</span><span class="en">IT Risk &amp; Governance</span></h4><p><span class="zh">建立合规安全体系，保障核心数据资产与业务连续性。</span><span class="en">Compliance and security protecting core assets and continuity.</span></p></div></div>
+        <div class="field reveal"><div class="fi">🤝</div><div><h4><span class="zh">组织变革管理</span><span class="en">Change Management</span></h4><p><span class="zh">优化人才结构与协作模式，打造敏捷组织文化。</span><span class="en">Talent structure and agile culture for the digital era.</span></p></div></div>
+        <div class="field reveal"><div class="fi">🤖</div><div><h4><span class="zh">智能化升级</span><span class="en">Intelligent Upgrade</span></h4><p><span class="zh">引入 AI 与大数据技术，实现运营效率与决策质量的跃升。</span><span class="en">AI and big data for leaps in efficiency and decision quality.</span></p></div></div>
+      </div>
+    </div>
+    <div class="philosophy reveal">
+      <b><span class="zh">服务理念</span><span class="en">Our Philosophy</span></b><br>
+      <span class="zh">以资深高管视野深耕中小企业服务，摒弃冗余流程，将国际大厂的成熟方法论与实战经验轻量化落地，用顶级视野与实战能力赋能企业实现跨越式成长。</span>
+      <span class="en">Big-firm methodologies, lightweight delivery. We bring Fortune 500 playbooks to growing businesses — no bloat, no jargon, just proven experience that fuels leapfrog growth.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="kicker"><span class="zh">联系我们</span><span class="en">Contact Us</span></span>
+      <h2><span class="zh">开始您的数字化转型之旅</span><span class="en">Start Your Transformation Journey</span></h2>
+      <p><span class="zh">提交您的业务痛点，获取专属初步诊断建议——我们将在 24 小时内与您联系。</span><span class="en">Share your pain points and get a tailored preliminary assessment — we respond within 24 hours.</span></p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="row"><div class="fi">📞</div><div><h4><span class="zh">电话咨询</span><span class="en">Phone</span></h4><p>+852 1234 5678（<span class="zh">周一至周五 9:00 - 18:00</span><span class="en">Mon–Fri 9:00–18:00</span>）</p></div></div>
+        <div class="row"><div class="fi">✉️</div><div><h4><span class="zh">商务合作邮箱</span><span class="en">Email</span></h4><p>info@mansonglimited.com<br><small><span class="zh">工作日 24 小时内回复</span><span class="en">Replies within 24h on business days</span></small></p></div></div>
+        <div class="row"><div class="fi">📍</div><div><h4><span class="zh">公司地址</span><span class="en">Address</span></h4><p><span class="zh">香港中环皇后大道中 188 号万邦行 20 楼 2001 室</span><span class="en">Room 2001, 20/F, 188 Queen's Road Central, Central, Hong Kong</span></p></div></div>
+        <div class="row"><div class="fi">🌐</div><div><h4><span class="zh">服务覆盖</span><span class="en">Coverage</span></h4><p><span class="zh">香港 · 粤港澳大湾区 · 内地及出海企业 · 海外业务</span><span class="en">Hong Kong · GBA · Mainland &amp; global ventures</span></p></div></div>
+      </div>
+      <div class="contact-cta reveal">
+        <h3><span class="zh">免费初步诊断（30 分钟）</span><span class="en">Free Preliminary Assessment (30 min)</span></h3>
+        <p><span class="zh">告诉我们您企业当前面临的数字化挑战，我们将为您提供初步诊断建议与咨询服务方案。</span><span class="en">Tell us your digital challenges and receive preliminary recommendations and a service proposal.</span></p>
+        <ul>
+          <li><span class="zh">免费初步诊断（30 分钟）</span><span class="en">Free 30-minute assessment</span></li>
+          <li><span class="zh">定制化咨询服务方案</span><span class="en">Tailored consulting proposal</span></li>
+          <li><span class="zh">行业案例参考分享</span><span class="en">Relevant industry case sharing</span></li>
+        </ul>
+        <a class="btn btn-primary" href="mailto:info@mansonglimited.com?subject=%E5%85%8D%E8%B4%B9%E5%88%9D%E6%AD%A5%E8%AF%8A%E6%96%AD%E9%A2%84%E7%BA%A6%20Free%20Assessment%20Booking&body=%E5%85%AC%E5%8F%B8%E5%90%8D%E7%A7%B0%20Company%3A%20%0A%E8%81%94%E7%B3%BB%E4%BA%BA%20Contact%3A%20%0A%E4%B8%9A%E5%8A%A1%E7%97%9B%E7%82%B9%20Pain%20Points%3A%20"><span class="zh">📧 邮件预约诊断</span><span class="en">📧 Book by Email</span></a>
+        &nbsp;&nbsp;
+        <a class="btn btn-ghost" href="tel:+85212345678"><span class="zh">📞 直接致电</span><span class="en">📞 Call Us</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="fbrand">
+      <img src="assets/logo.jpg" alt="Mansong Limited">
+      <div>
+        <span class="zh">漫松有限公司</span><span class="en">Mansong Limited</span><br>
+        <small style="font-weight:400;color:#8fa9cc"><span class="zh">企业IT数字化与AI转型服务</span><span class="en">Enterprise IT, Digital &amp; AI Transformation</span></small>
+      </div>
+    </div>
+    <div>
+      <a href="#advantages"><span class="zh">核心优势</span><span class="en">Why Us</span></a> ·
+      <a href="#services"><span class="zh">服务体系</span><span class="en">Services</span></a> ·
+      <a href="#team"><span class="zh">团队</span><span class="en">Team</span></a> ·
+      <a href="#contact"><span class="zh">联系</span><span class="en">Contact</span></a>
+    </div>
+    <div>© 2026 Mansong Limited <span class="zh">漫松有限公司 版权所有</span><span class="en">All rights reserved.</span> · mansong.hk</div>
+  </div>
+</footer>
+
+<script>
+/* ---------- language toggle ---------- */
+function toggleLang(){
+  var b=document.body;
+  b.classList.toggle('en');
+  var btn=document.getElementById('langBtn');
+  if(b.classList.contains('en')){
+    btn.textContent='中文';
+    document.documentElement.lang='en';
+  }else{
+    btn.textContent='EN';
+    document.documentElement.lang='zh-HK';
+  }
+  try{localStorage.setItem('ms-lang',b.classList.contains('en')?'en':'zh')}catch(e){}
+}
+(function(){
+  try{
+    if(localStorage.getItem('ms-lang')==='en'){
+      document.body.classList.add('en');
+      document.getElementById('langBtn').textContent='中文';
+      document.documentElement.lang='en';
+    }
+  }catch(e){}
+})();
+
+/* ---------- mobile nav ---------- */
+var burger=document.getElementById('burger');
+var links=document.getElementById('navLinks');
+burger.addEventListener('click',function(){links.classList.toggle('open')});
+links.addEventListener('click',function(){links.classList.remove('open')});
+
+/* ---------- reveal on scroll ---------- */
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+  });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el,i){
+  el.style.transitionDelay=(i%4)*70+'ms';
+  io.observe(el);
+});
+</script>
+</body>
+</html>
